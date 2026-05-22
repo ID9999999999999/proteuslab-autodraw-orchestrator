@@ -1,0 +1,279 @@
+{
+  "tasks": {
+    "task1_xnor": {
+      "title": "2-input XNOR using 74LS86 and 74LS04",
+      "components": [
+        {
+          "name": "74LS86",
+          "placements": [
+            [
+              5,
+              4
+            ]
+          ]
+        },
+        {
+          "name": "74LS04",
+          "placements": [
+            [
+              10,
+              4
+            ]
+          ]
+        },
+        {
+          "name": "LOGICSTATE",
+          "placements": [
+            [
+              0,
+              2.5
+            ],
+            [
+              0,
+              5.5
+            ]
+          ]
+        },
+        {
+          "name": "LOGICPROBE",
+          "placements": [
+            [
+              14,
+              4
+            ]
+          ]
+        }
+      ],
+      "wires": [
+        {
+          "label": "A_to_xor_input_1",
+          "points": [
+            [
+              1,
+              2.5
+            ],
+            [
+              4,
+              3.5
+            ]
+          ]
+        },
+        {
+          "label": "B_to_xor_input_2",
+          "points": [
+            [
+              1,
+              5.5
+            ],
+            [
+              4,
+              4.5
+            ]
+          ]
+        },
+        {
+          "label": "xor_output_to_not_input",
+          "points": [
+            [
+              7,
+              4
+            ],
+            [
+              9,
+              4
+            ]
+          ]
+        },
+        {
+          "label": "not_output_to_probe",
+          "points": [
+            [
+              11,
+              4
+            ],
+            [
+              13,
+              4
+            ]
+          ]
+        }
+      ]
+    },
+    "task2_nand_latch": {
+      "title": "Sbar/Rbar NAND latch using 74LS00",
+      "components": [
+        {
+          "name": "74LS00",
+          "placements": [
+            [
+              6,
+              4
+            ]
+          ]
+        },
+        {
+          "name": "LOGICSTATE",
+          "placements": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "name": "LOGICPROBE",
+          "placements": [
+            [
+              12,
+              3
+            ],
+            [
+              12,
+              6
+            ]
+          ]
+        }
+      ],
+      "wires": [
+        {
+          "label": "Sbar_to_upper_nand",
+          "points": [
+            [
+              1,
+              3
+            ],
+            [
+              5,
+              3.5
+            ]
+          ]
+        },
+        {
+          "label": "Rbar_to_lower_nand",
+          "points": [
+            [
+              1,
+              6
+            ],
+            [
+              5,
+              5.5
+            ]
+          ]
+        }
+      ]
+    },
+    "task3_decoder": {
+      "title": "3-bit decoder using 74LS138",
+      "components": [
+        {
+          "name": "74LS138",
+          "placements": [
+            [
+              7,
+              5
+            ]
+          ]
+        },
+        {
+          "name": "LOGICSTATE",
+          "placements": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              0,
+              8
+            ]
+          ]
+        },
+        {
+          "name": "LOGICPROBE",
+          "placements": [
+            [
+              14,
+              1
+            ],
+            [
+              14,
+              2
+            ],
+            [
+              14,
+              3
+            ],
+            [
+              14,
+              4
+            ],
+            [
+              14,
+              5
+            ],
+            [
+              14,
+              6
+            ],
+            [
+              14,
+              7
+            ],
+            [
+              14,
+              8
+            ]
+          ]
+        }
+      ],
+      "wires": []
+    },
+    "task5_adder": {
+      "title": "4-bit full adder skeleton",
+      "components": [
+        {
+          "name": "FULL ADDER",
+          "placements": [
+            [
+              4,
+              8
+            ],
+            [
+              7,
+              6
+            ],
+            [
+              10,
+              4
+            ],
+            [
+              13,
+              2
+            ]
+          ]
+        }
+      ],
+      "wires": []
+    }
+  }
+}

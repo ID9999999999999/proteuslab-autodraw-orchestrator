@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+screenshots/
+submission_pack/
+coordinates.csv
+*.zip
+*.bak
+*.workspace
+*.log
+.DS_Store
