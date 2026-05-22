@@ -55,9 +55,8 @@ class Profile:
 
 def make_profile(points: dict[str, Point], grid_step: int = 40) -> Profile:
     return Profile({
-        "version": 1,
+        "version": 2,
         "proteus": {
-            "pick_devices_button": points["pick_devices_button"].to_dict(),
             "pick_search_box": points["pick_search_box"].to_dict(),
             "pick_ok_button": points["pick_ok_button"].to_dict()
         },

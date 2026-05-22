@@ -59,8 +59,8 @@ class GuiEngine:
         x, y = self.pg.position()
         return Point(int(x), int(y))
 
-    def open_pick_devices(self, pick_button: Point) -> None:
-        self.click(pick_button, "open Pick Devices")
+    def open_pick_devices(self) -> None:
+        self.press("p", "open Pick Devices using keyboard shortcut")
 
     def pick_component(self, name: str, search_box: Point, ok_button: Point) -> None:
         self.click(search_box, f"search component {name}")

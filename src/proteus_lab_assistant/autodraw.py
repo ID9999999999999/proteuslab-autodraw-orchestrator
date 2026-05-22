@@ -15,14 +15,13 @@ class AutoDrawer:
     def draw_task(self, task_id: str) -> None:
         task = get_task(task_id)
         proteus = self.profile.data["proteus"]
-        pick_button = Point.from_dict(proteus["pick_devices_button"])
         search_box = Point.from_dict(proteus["pick_search_box"])
         ok_button = Point.from_dict(proteus["pick_ok_button"])
 
         for component in task.get("components", []):
             name = component["name"]
             placements = component.get("placements", [])
-            self.engine.open_pick_devices(pick_button)
+            self.engine.open_pick_devices()
             self.engine.pick_component(name, search_box, ok_button)
             for rel in placements:
                 self.engine.place_component(self._point(rel), name)
